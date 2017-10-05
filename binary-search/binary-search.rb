@@ -5,23 +5,23 @@ require 'benchmark'
 # Worst-case Space Complexity O(1)
 
 # Recursive
-def binary_search_r(container, item)
+def binary_search_recursive(container, item)
   low = 0
   high = container.size - 1
 
   mid = low + ((high - low) / 2) # prevent overflow issues
 
   if item < container[mid] # left side
-    return binary_search_r(container[low...mid], item)
+    return binary_search_recursive(container[low...mid], item)
   elsif item > container[mid] # right side
-    return (mid + 1) + binary_search_r(container[mid + 1..high], item)
+    return (mid + 1) + binary_search_recursive(container[mid + 1..high], item)
   else
     return mid
   end
 end
 
 # Iterative
-def binary_search_i(container, item)
+def binary_search_iterative(container, item)
   low = 0
   high = container.size - 1
 
@@ -48,15 +48,15 @@ test_array.sort!
 puts "Testing array with #{test_num} elements, looking for #{test_target}."
 Benchmark.bm do |bm|
   bm.report do
-    binary_search_r(test_array, test_target)
+    binary_search_recursive(test_array, test_target)
   end
   bm.report do
-    binary_search_i(test_array, test_target)
+    binary_search_iterative(test_array, test_target)
   end
 end
 
-# p binary_search_r([0, 2, 3, 4, 9, 11, 12, 12, 14, 15, 22], 15)
-# p binary_search_i([0, 2, 3, 4, 9, 11, 12, 12, 14, 15, 22], 4)
+# p binary_search_recursive([0, 2, 3, 4, 9, 11, 12, 12, 14, 15, 22], 15)
+# p binary_search_iterative([0, 2, 3, 4, 9, 11, 12, 12, 14, 15, 22], 4)
 
 # If the input array is unsorted, binary search would be significantly slower
 # considering sorting / storing the array (e.g. storing in a Hash, sorting, etc.).
@@ -69,9 +69,47 @@ end
 # 3. mid = low + ((high - low) / 2)
 # 4. If container[mid] == item, return mid
 # 5a. If container[low] <= container[mid], the left half is sorted.
-# 5b.   If container[low] <= item AND container[mid] >= item, recurse container[low...mid]
+# 5b.   If container[low] <= item AND container[mid] >= item, recurse container[low..mid]
 # 5b.   Else recurse container[mid + 1..high]
 # 5a. Else
 # 5c.   If container[high] >= item AND container[mid] <= item, recurse container[mid + 1..high]
-# 5c.   Else recurse container[low...mid]
+# 5c.   Else recurse container[low..mid]
 # End
+
+# e.g.
+# rotated array: [4, 5, 6, 7, 0, 1, 2]
+def binary_search_rotated(nums, target)
+  low = 0
+  high = nums.size - 1
+
+  while low <= high
+    mid = low + ((high - low) / 2) # mid = (low + high) / 2 [[overflow]]
+    return mid if nums[mid] == target # our answer, since `while low <= high`
+
+    if nums[low] <= nums[mid]
+      # THE LEFT SIDE IS SORTED, e.g. 4..5..6..7, 4 < 7
+      if target >= nums[low] && target < nums[mid]
+        # TARGET IS IN BETWEEN LOW AND MID
+        # SO WE SHOULD SEARCH LEFT SIDE, INCLUSIVE OF MID
+        high = mid
+      else
+        # TARGET ACTUALLY MUST BE ON RIGHT SIDE
+        # SO WE SHOULD SEARCH RIGHT SIZE, EXCLUSIVE OF MID
+        low = mid + 1
+      end
+    else
+      # THE RIGHT SIDE IS SORTED, e.g. in [6, 7, 0, 1, 2, 4, 5]
+      if target > nums[mid] && target <= nums[high]
+        # TARGET IS IN BETWEEN MID AND HIGH
+        # SO WE SHOULD SEARCH RIGHT SIDE, EXCLUSIVE OF MID
+        low = mid + 1
+      else
+        # TARGET ACTUALLY MUST BE ON LEFT SIDE
+        # SO WE SHOULD SEARCH LEFT SIDE, INCLUSIVE OF MID
+        high = mid
+      end
+    end
+  end
+
+  -1
+end
