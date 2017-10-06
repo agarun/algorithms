@@ -60,7 +60,7 @@ end
 
 # If the input array is unsorted, binary search would be significantly slower
 # considering sorting / storing the array (e.g. storing in a Hash, sorting, etc.).
-# O( n log n ) worst case is not desirable compared to O( n ).
+# O(n log n) worst case is not desirable compared to O(n).
 
 # If the input array is a rotated array, note that in a rotated array, one half of the
 # array is in the correct order. e.g. [2, 3, 4, 5, 1] => 4 is median, the left half is in order.
@@ -108,6 +108,36 @@ def binary_search_rotated(nums, target)
         # SO WE SHOULD SEARCH LEFT SIDE, INCLUSIVE OF MID
         high = mid
       end
+    end
+  end
+
+  -1
+end
+
+# e.g.
+# rotated array that might have duplicates: ([1, 3, 1, 1, 1], 3)
+def binary_search_rotated(nums, target)
+  low = 0
+  high = nums.size - 1
+
+  while low <= high
+    mid = low + ((high - low) / 2)
+    return mid if nums[mid] == target
+
+    if nums[low] < nums[mid]
+      if target >= nums[low] && target < nums[mid]
+        high = mid
+      else
+        low = mid + 1
+      end
+    elsif nums[low] > nums[mid]
+      if target > nums[mid] && target <= nums[high]
+        low = mid + 1
+      else
+        high = mid
+      end
+    else
+      low += 1
     end
   end
 
