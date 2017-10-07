@@ -37,4 +37,4 @@ p bubble_sort([5, 6, 7, 8, 9, 4, 3, 2])
 #
 # Space Complexity
 #
-# O(1)
+# O(1). in place!
