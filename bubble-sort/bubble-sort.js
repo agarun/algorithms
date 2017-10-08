@@ -9,9 +9,9 @@ const bubbleSort = function sort(nums) {
     while (i < nums.length - 1) {
       if (nums[i] > nums[i + 1]) {
         sorted = false;
-        temp = nums[i]
-        nums[i] = nums[i + 1]
-        nums[i + 1] = temp
+        temp = nums[i];
+        nums[i] = nums[i + 1];
+        nums[i + 1] = temp;
       };
 
       i++;
