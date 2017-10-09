@@ -15,8 +15,8 @@ const bubbleSort = function sort(nums) {
       };
 
       i++;
-    };
-  };
+    }
+  }
 
   return nums;
 };
