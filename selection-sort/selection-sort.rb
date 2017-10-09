@@ -38,3 +38,19 @@ p selection_sort([23, 42, 4, 16, 8, 15])
 # We don't set min to 5 because of the ranges specified
 # _because_ there is no need to check the last element,
 # since the last sort took care of its position.
+
+#
+# Time complexity:
+# The number of iterations of the loop begins as n
+# then n - 1.. n - 2.. etc
+# (n) + (n - 1) + (n - 2) + .. + 2 + 1
+# Arithmetic progression sum is (first + last)*(num pairs) = (n + 1)(n / 2)
+# which is on the order of n^2
+# Calls to find mins + Calls to swap + Loop = O(n^2 + ...) = O(n^2)
+# Best-case is still O(n^2) because we'll have to perform these operations every time
+# with how the code executes - note that the loop is _always_ entered
+# what doesn't always happen is the swap / if statement, which are constant..
+
+#
+# Space complexity:
+# O(1) - it's in place!
