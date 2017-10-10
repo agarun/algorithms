@@ -20,6 +20,10 @@ def binary_search_recursive(container, item)
   end
 end
 
+p binary_search_recursive([1, 2, 3, 4, 5, 6, 7, 8], 2)
+p binary_search_recursive([1, 2, 3, 4, 5, 6, 7, 8], 6)
+p binary_search_recursive([1, 2, 3, 4, 5, 6, 7, 8], 7)
+
 # Iterative
 def binary_search_iterative(container, item)
   low = 0
