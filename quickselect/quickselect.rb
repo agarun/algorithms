@@ -70,11 +70,11 @@ def quickselect(array, low, high, k)
     partition_index = partition(array, low, high)
 
     if partition_index == k
-      return array[k]
+      return array[k] # because the pivot is in its true sorted position
     elsif partition_index > k
-      high = partition_index - 1
+      high = partition_index - 1 # k must be left of part_idx
     else
-      low = partition_index + 1
+      low = partition_index + 1 # k must be right of part_idx
     end
   end
 end
