@@ -64,10 +64,10 @@ end
 # O ( n log n)
 
 def max_sub_array(nums)
-  max_sub_array_helper(nums, 0, nums.size - 1)
+  sub_array(nums, 0, nums.size - 1)
 end
 
-def max_sub_array_helper(nums, left, right)
+def sub_array(nums, left, right)
   return nums[left] if left == right
 
   mid = (left + right) / 2 # 1.
