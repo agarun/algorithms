@@ -86,9 +86,10 @@ def three_sum(nums)
     low = i + 1
     high = nums.size - 1
     target = -num # add -num to num to equal 0
-    sum = nums[low] + nums[high]
 
     while low < high
+      sum = nums[low] + nums[high]
+
       if sum == target
         triplets << [nums[i], nums[low], nums[high]]
 
