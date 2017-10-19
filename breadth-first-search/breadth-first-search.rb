@@ -21,7 +21,10 @@ class Graph
 end
 
 # Breadth-first search (BFS) on an undirected graph
-#
+# input: graph and source vertex, target optional
+# output: (1) all vertices reachable from source vertex are 'discovered'
+# (2) `meta` generation creates a list of 'actions' from start to end. (3) if a
+# target is supplied, print the shortest path from start to end as found by BFS
 # pseudocode pulled from wiki, visualgo, Skiena's lectures
 
 def breadth_first_search(graph, source, target = nil)
@@ -106,6 +109,28 @@ graph1.edge_between(n6, n7)
 #     2       6 - 7
 #
 puts breadth_first_search(graph1, n1, n4) # => 1, 3, 4
+# q: 1
+# enter loop -> queue is not empty
+# dequeue 1. q: []
+# current node -> 1
+# visit all neighbors/children: expecting 0, 2 and 3
+# enqueue 0, 2, 3, marking each as visited. q: [0, 2, 3]
+# deq 0. q: [2, 3]
+# current node -> 0
+# visit all neighbors/children: expecting 1
+# enqueue 1, marking as visited. q: [2, 3, 1]
+# deq 2. q: [3, 1]
+# current node -> 2
+# visit all neighbors/children: they're already visit
+# deq 3. q: [1]
+# current node -> 3
+# visit all neighbors/children: expecting 4
+# enqueue 4, marking as visited. q: [1, 4]
+# deq 1. q: [4]
+# we are at the target, so break & construct path
+# the last queue is [4]
+# the path is then essentially constructed from { 4 => 3, 3 => 1 }
+
 puts breadth_first_search(graph1, n3, n6) # => 3, 4, 6
 
 # time complexity
