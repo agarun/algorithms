@@ -64,6 +64,9 @@ def breadth_first_search(graph, source, target = nil)
   end
 end
 
+# BFS spanning tree
+# sequence of vertices from a vertex `target`
+# that is reachable from the source vertex `source`
 def path(source, target, meta)
   # retrieve the path to the target node, using the meta hash
   # that was constructed at each iteration of the `each` iteration
