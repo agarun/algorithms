@@ -21,8 +21,6 @@ class Graph
 end
 
 # Depth-first search (BFS) on an undirected graph
-#
-# Recursion: Implicit stack
 class DFS
   attr_accessor :graph, :meta, :visited
 
@@ -34,6 +32,7 @@ class DFS
 
   # FIXME: this particular recursive implementation
   # works only with trees (acyclic graphs) because of the DFS#path method
+  # Recursion: Implicit stack
   def depth_first_search_recursive(source)
     visited.add(source)
 
