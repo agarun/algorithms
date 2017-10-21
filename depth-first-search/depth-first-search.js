@@ -23,18 +23,18 @@ class DepthFirstSearch {
   }
 
   searchRecursive(currentNode = this.source) {
-    // if (currentNode === this.target) return this.path(currentNode);
-    //
-    // this.graph.visited[currentNode] = true;
-    //
-    // let neighbors = this.graph.neighbors[currentNode];
-    // for (let i = 0; i < neighbors.length; i += 1) {
-    //   let neighbor = neighbors[i];
-    //   if (this.graph.visited[neighbor] === false) {
-    //     this.graph.parents[neighbor] = currentNode;
-    //     this.searchRecursive(neighbor);
-    //   }
-    // }
+    if (currentNode === this.target) return this.path(currentNode);
+
+    this.graph.visited[currentNode] = true;
+
+    let neighbors = this.graph.neighbors[currentNode];
+    for (let i = 0; i < neighbors.length; i += 1) {
+      let neighbor = neighbors[i];
+      if (this.graph.visited[neighbor] === false) {
+        this.graph.parents[neighbor] = currentNode;
+        this.searchRecursive(neighbor);
+      }
+    }
   }
 
   searchIterative() {
@@ -91,6 +91,7 @@ graphOne.edgeBetween(6, 7);
 //     | /     |   |
 //     2       6 - 7
 
+// note: not shortest path
 // const dfsOne = new DepthFirstSearch(graphOne, 1, 4);
 // console.log(dfsOne.searchRecursive());
 
