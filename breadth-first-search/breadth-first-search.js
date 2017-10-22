@@ -17,7 +17,7 @@ class Graph {
     this.neighbors[nodeOne].push(nodeTwo);
     this.neighbors[nodeTwo].push(nodeOne);
   }
-};
+}
 
 class BreadthFirstSearch {
   constructor(graph, source, target) {
@@ -53,7 +53,6 @@ class BreadthFirstSearch {
   path(currentNode) {
     let path = [];
     let predecessor = currentNode;
-
     while (predecessor !== this.source) {
       path.push(predecessor);
       predecessor = this.graph.parents[predecessor];
@@ -114,34 +113,33 @@ console.log(bfsTwo.search());
 // - - - - - - - - - - - - - - - -
 
 const path = function path(meta, source, target) {
-  let predecessor = target
-  let result_path = [];
+  let predecessor = target;
+  const resultPath = [];
 
   while (predecessor !== source) {
-    result_path.push(predecessor);
+    resultPath.push(predecessor);
     predecessor = meta[predecessor];
-
   }
 
-  result_path.push(source);
-  return result_path.reverse().join(", ");
+  resultPath.push(source);
+  return resultPath.reverse().join(', ');
 };
 
 const breadthFirstSearch2 = function breadthFirstSearch(graph, source, target) {
-  let meta = []; // to print our output path to the target
-  let visited = [];
-  let queue = [source];
+  const meta = []; // to print our output path to the target
+  const visited = [];
+  const queue = [source];
 
   while (queue.length) {
-    currentNode = queue.shift();
+    const currentNode = queue.shift();
     if (currentNode === target) return path(meta, source, target);
 
     for (let i = 0; i < graph.length; i += 1) {
-      let neighbor = graph[currentNode][i];
+      const neighbor = graph[currentNode][i];
       // if this node hasn't been visited before &&
       // this node is a neighbor (adjacent to) the currentNode (value 1),
       // then mark it as visited && build the `meta` array for output
-      if (!visited[i] && graph[currentNode][i] && i !== currentNode) {
+      if (!visited[i] && neighbor && i !== currentNode) {
         meta[i] = currentNode;
         visited[i] = true;
         queue.push(i);
@@ -239,21 +237,21 @@ const doBFS = function(graph, source) {
 }
 
 const adjList = [
-    [1],
-    [0, 4, 5],
-    [3, 4, 5],
-    [2, 6],
-    [1, 2],
-    [1, 2, 6],
-    [3, 5],
-    []
-    ];
+  [1],
+  [0, 4, 5],
+  [3, 4, 5],
+  [2, 6],
+  [1, 2],
+  [1, 2, 6],
+  [3, 5],
+  []
+];
 
 const bfsInfo = doBFS(adjList, 3);
 
 console.log("KhanAcademy BFS with Adjacency List");
 for (let i = 0; i < adjList.length; i++) {
-    console.log(("vertex " + i + ": distance = " + bfsInfo[i].distance + ", predecessor = " + bfsInfo[i].predecessor));
+  console.log(("vertex " + i + ": distance = " + bfsInfo[i].distance + ", predecessor = " + bfsInfo[i].predecessor));
 }
 
 // time complexity
