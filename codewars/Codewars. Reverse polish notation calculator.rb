@@ -24,8 +24,8 @@ def calc(expr)
         raise "Invalid operation: not enough elements"
       else
         # Alternatively, use Ruby's operator methods by performing stack.pop in this context.
-        # i.e. (1) Calling the method on `stack.pop`
-        #      (2) Passing in `stack.pop` (takes off 2nd el) as arg to `send` (passed to the op)
+        # i.e. (1) Popping two elements off
+        #      (2) Call method on left element, pass in right element as argument
         stack = send(token, stack)
       end
     else
