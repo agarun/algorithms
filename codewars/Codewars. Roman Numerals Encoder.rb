@@ -36,3 +36,18 @@ def solution(integer)
 end
 
 p solution(1666) # => "MDCLXVI"
+
+def solution(integer)
+  result = ""
+  remainder = integer
+  dictionary = NUMERALS.to_hash
+
+  dictionary.map do |numeral, number|
+    times, remainder = remainder.divmod(number)
+    result << numeral.to_s * times
+  end
+
+  result
+end
+
+p solution(1666) # => "MDCLXVI"
