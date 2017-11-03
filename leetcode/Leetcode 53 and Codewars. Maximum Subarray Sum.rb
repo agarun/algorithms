@@ -33,6 +33,8 @@ def max_subarray_sum(array)
   sum # the last sequential sum is the greatest contiguous sum!
 end
 
+p max_subarray_sum([-2, 1, -3, 4, -1, 2, 1, -5, 4]) # => 6
+
 # if the list is made up of only positive numbers add all of them up
 # if the list is made up of only negative numbers return 0
 def max_subarray_sum(array)
@@ -51,6 +53,8 @@ def max_subarray_sum(array)
 
   max_sum # the last sequential sum. 0 if all nums were negative
 end
+
+p max_subarray_sum([-2, 1, -3, 4, -1, 2, 1, -5, 4]) # => 6
 
 # DIVIDE AND CONQUER ALGORITHM:
 # 1 . Select the middle element in the array
@@ -72,8 +76,8 @@ def sub_array(nums, left, right)
 
   mid = (left + right) / 2 # 1.
 
-  left_ans = max_sub_array_helper(nums, left, mid) # 2a.
-  right_ans = max_sub_array_helper(nums, mid + 1, right) # 2a.
+  left_ans = sub_array(nums, left, mid) # 2a.
+  right_ans = sub_array(nums, mid + 1, right) # 2a.
 
   left_max = nums[mid] # 2b. & below to add suffixes
   right_max = nums[mid + 1] # 2b. & below to add suffixes
@@ -96,3 +100,5 @@ def sub_array(nums, left, right)
   two_b = left_max + right_max
   [two_a, two_b].max
 end
+
+p max_sub_array([-2, 1, -3, 4, -1, 2, 1, -5, 4]) # => 6
