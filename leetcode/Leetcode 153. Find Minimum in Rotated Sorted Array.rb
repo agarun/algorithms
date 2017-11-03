@@ -27,7 +27,6 @@ def find_min(nums)
   low = 0
   high = nums.size - 1
 
-  # if some value A < some value B, we want to move away from B
   until low == high
     if nums[low] < nums[high]
       # array *must* be sorted
