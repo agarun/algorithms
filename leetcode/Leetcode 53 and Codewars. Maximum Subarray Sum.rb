@@ -56,6 +56,19 @@ end
 
 p max_subarray_sum([-2, 1, -3, 4, -1, 2, 1, -5, 4]) # => 6
 
+def largest_contiguous_subsum3(list)
+  largest = list.first
+  current = list.first
+
+  list.drop(1).each do |num|
+    current = 0 if current < 0 # reset running sum if necessary
+    current += num # build running sum and check against current max
+    largest = current if largest < current
+  end
+
+  largest
+end
+
 # DIVIDE AND CONQUER ALGORITHM:
 # 1 . Select the middle element in the array
 #   . The max subarray either has this element, or it doesn't
