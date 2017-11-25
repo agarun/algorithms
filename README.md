@@ -34,6 +34,18 @@ Common puzzles, problems, and algorithms.
     * [JavaScript](https://github.com/agarun/algorithms/blob/master/binary-search/binary-search.js)
 
 ### Challenges (mostly Ruby & JavaScript)
+  * Project Euler
+    * [1. Multiples of 3 and 5](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%201.%20Multiples%20of%203%20and%205.rb)
+    * [2. Even Fibonacci numbers](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%202.%20Even%20Fibonacci%20numbers.rb)
+    * [3. Largest prime factor](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%203.%20Largest%20prime%20factor.rb)
+    * [4. Largest palindrome product](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%204.%20Largest%20palindrome%20product.rb)
+    * [5. Smallest multiple](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%205.%20Smallest%20multiple.rb)
+    * [6. Sum square difference](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%206.%20Sum%20square%20difference.rb)
+    * [7. 10_001st prime](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%207.%2010_001st%20prime.rb)
+    * [8. Largest product in a series](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%208.%20Largest%20product%20in%20a%20series.rb)
+    * [11. Largest product in a grid](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2011.%20Largest%20product%20in%20a%20grid.rb)
+    * [31 JS. Coin sums](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2031.%20Coin%20sums.js)
+    * [31 Ruby. Coin sums](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2031.%20Coin%20sums.rb)
   * Codewars
     * [Anagrams from an array](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Anagrams%20from%20an%20array.rb)  
     * [Can you get the loop](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Can%20you%20get%20the%20loop.rb)  
