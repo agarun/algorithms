@@ -44,8 +44,8 @@ Common puzzles, problems, and algorithms.
     * [7. 10_001st prime](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%207.%2010_001st%20prime.rb)
     * [8. Largest product in a series](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%208.%20Largest%20product%20in%20a%20series.rb)
     * [11. Largest product in a grid](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2011.%20Largest%20product%20in%20a%20grid.rb)
-    * [31 JS. Coin sums](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2031.%20Coin%20sums.js)
-    * [31 Ruby. Coin sums](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2031.%20Coin%20sums.rb)
+    * [31. JS Coin sums](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2031.%20Coin%20sums.js)
+    * [31. Ruby Coin sums](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%2031.%20Coin%20sums.rb)
   * Codewars
     * [Anagrams from an array](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Anagrams%20from%20an%20array.rb)  
     * [Can you get the loop](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Can%20you%20get%20the%20loop.rb)  
@@ -64,7 +64,30 @@ Common puzzles, problems, and algorithms.
     * [Tribonacci Sequence](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Tribonacci%20Sequence.js)  
     * [Twice linear](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Twice%20linear.rb)  
   * LeetCode
+    * [1. Two Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%201.%20Two%20Sum.rb)
+    * [11. Container with the most water](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2011.%20Container%20with%20the%20most%20water.rb)
+    * [15. Three Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2015.%20Three%20Sum.rb)
+    * [16. 3Sum Closest](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2016.%203Sum%20Closest.rb)
+    * [18. Four Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2018.%20Four%20Sum.rb)
+    * [26. Remove Duplicates from Sorted Array](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2026.%20Remove%20Duplicates%20from%20Sorted%20Array.rb)
+    * [31. Next Permutation](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2031.%20Next%20Permutation.rb)
+    * [53 and Codewars. Maximum Subarray Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2053%20and%20Codewars.%20Maximum%20Subarray%20Sum.rb)
+    * [80. Remove Duplicates from Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.rb)
+    * [81. Search in Rotated Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2081.%20Search%20in%20Rotated%20Sorted%20Array%20II.rb)
+    * [121. Best Time to Buy and Sell Stock](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.rb)
+    * [122. Best Time to Buy and Sell Stock II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.rb)
+    * [136. Single Number](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20136.%20Single%20Number.rb)
+    * [139. Word Break](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20139.%20Word%20Break.rb)
+    * [152. Maximum Product Subarray](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20152.%20Maximum%20Product%20Subarray.rb)
+    * [153. Find Minimum in Rotated Sorted Array](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.rb)
+    * [167. Two Sum II - Input array is sorted](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20167.%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted.rb)
+    * [225. Implement Stack using Queues](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20225.%20Implement%20Stack%20using%20Queues.rb)
+    * [232. Implement Queue using Stacks](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20232.%20Implement%20Queue%20using%20Stacks.rb)
+    * [264. Ugly number II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20264.%20Ugly%20number%20II.rb)
+    * [442. Find all duplicates in an array](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20442.%20Find%20all%20duplicates%20in%20an%20array.rb)
   * CTCI
+    * [Ch. 8, Q. 11](https://github.com/agarun/algorithms/blob/master/cracking-the-coding-interview-6th/chapter8-question11.rb)
+    * [Pg. 68, Ex. 1](https://github.com/agarun/algorithms/blob/master/cracking-the-coding-interview-6th/example-1-page-68.rb)
 
 ### Games
   * Battleship
