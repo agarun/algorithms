@@ -75,6 +75,7 @@ Common puzzles, problems, and algorithms.
     * [80. Remove Duplicates from Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.rb)
     * [81. Search in Rotated Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2081.%20Search%20in%20Rotated%20Sorted%20Array%20II.rb)
     * [101. Symmetric Tree](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20101.%20Symmetric%20Tree.rb)
+    * [104. Maximum Depth of Binary Tree](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20104.%20Maximum%20Depth%20of%20Binary%20Tree.rb)
     * [121. Best Time to Buy and Sell Stock](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.rb)
     * [122. Best Time to Buy and Sell Stock II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.rb)
     * [136. Single Number](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20136.%20Single%20Number.rb)
