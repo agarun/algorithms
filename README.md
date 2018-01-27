@@ -85,6 +85,7 @@ Common puzzles, problems, and algorithms.
     * [167. Two Sum II - Input array is sorted](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20167.%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted.rb)
     * [225. Implement Stack using Queues](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20225.%20Implement%20Stack%20using%20Queues.rb)
     * [226. Invert Binary Tree](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20226.%20Invert%20Binary%20Tree.rb)
+    * [230. Kth Smallest Element in a BST](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20230.%20Kth%20Smallest%20Element%20in%20a%20BST.rb)  
     * [232. Implement Queue using Stacks](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20232.%20Implement%20Queue%20using%20Stacks.rb)
     * [264. Ugly number II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20264.%20Ugly%20number%20II.rb)
     * [442. Find all duplicates in an array](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20442.%20Find%20all%20duplicates%20in%20an%20array.rb)
@@ -105,3 +106,20 @@ Common puzzles, problems, and algorithms.
     * [Ruby](https://github.com/agarun/algorithms/tree/master/games/towers-of-hanoi)
   * Chess
     * [Ruby](https://github.com/agarun/homeworks/tree/master/classwork/W2D2/chess)
+
+        My favorite resources for reviewing & learning:
+
+        Github collections
+        *
+        *
+
+        Reddit posts
+        *
+        *
+
+        Books
+        * Algorithms
+
+        * JavaScript
+
+        * Ruby
