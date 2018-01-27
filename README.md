@@ -106,20 +106,3 @@ Common puzzles, problems, and algorithms.
     * [Ruby](https://github.com/agarun/algorithms/tree/master/games/towers-of-hanoi)
   * Chess
     * [Ruby](https://github.com/agarun/homeworks/tree/master/classwork/W2D2/chess)
-
-        My favorite resources for reviewing & learning:
-
-        Github collections
-        *
-        *
-
-        Reddit posts
-        *
-        *
-
-        Books
-        * Algorithms
-
-        * JavaScript
-
-        * Ruby
