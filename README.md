@@ -70,6 +70,8 @@ Common puzzles, problems, and algorithms.
     * [16. 3Sum Closest](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2016.%203Sum%20Closest.rb)
     * [18. Four Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2018.%20Four%20Sum.rb)
     * [19. Remove Nth Node From End of List](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2019.%20Remove%20Nth%20Node%20From%20End%20of%20List.rb)
+    * [22. Generate Parentheses](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2022.%20Generate%20Parentheses.rb)
+    * [24. Swap Nodes in Pairs](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2024.%20Swap%20Nodes%20in%20Pairs.rb)
     * [26. Remove Duplicates from Sorted Array](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2026.%20Remove%20Duplicates%20from%20Sorted%20Array.rb)
     * [31. Next Permutation](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2031.%20Next%20Permutation.rb)
     * [53 and Codewars. Maximum Subarray Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2053%20and%20Codewars.%20Maximum%20Subarray%20Sum.rb)
