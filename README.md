@@ -65,6 +65,7 @@ Common puzzles, problems, and algorithms.
     * [Twice linear](https://github.com/agarun/algorithms/blob/master/codewars/Codewars.%20Twice%20linear.rb)  
   * LeetCode
     * [1. Two Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%201.%20Two%20Sum.rb)
+    * [6. ZigZag Conversion](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%206.%20ZigZag%20Conversion.rb)
     * [11. Container with the most water](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2011.%20Container%20with%20the%20most%20water.rb)
     * [15. Three Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2015.%20Three%20Sum.rb)
     * [16. 3Sum Closest](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2016.%203Sum%20Closest.rb)
@@ -74,6 +75,7 @@ Common puzzles, problems, and algorithms.
     * [24. Swap Nodes in Pairs](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2024.%20Swap%20Nodes%20in%20Pairs.rb)
     * [26. Remove Duplicates from Sorted Array](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2026.%20Remove%20Duplicates%20from%20Sorted%20Array.rb)
     * [31. Next Permutation](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2031.%20Next%20Permutation.rb)
+    * [48. Rotate Image](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2048.%20Rotate%20Image.rb)
     * [53 and Codewars. Maximum Subarray Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2053%20and%20Codewars.%20Maximum%20Subarray%20Sum.rb)
     * [80. Remove Duplicates from Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.rb)
     * [81. Search in Rotated Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2081.%20Search%20in%20Rotated%20Sorted%20Array%20II.rb)
