@@ -77,6 +77,7 @@ Common puzzles, problems, and algorithms.
     * [31. Next Permutation](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2031.%20Next%20Permutation.rb)
     * [48. Rotate Image](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2048.%20Rotate%20Image.rb)
     * [53 and Codewars. Maximum Subarray Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2053%20and%20Codewars.%20Maximum%20Subarray%20Sum.rb)
+    * [64. Minimum Path Sum](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2064.%20Minimum%20Path%20Sum.rb)
     * [80. Remove Duplicates from Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.rb)
     * [81. Search in Rotated Sorted Array II](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%2081.%20Search%20in%20Rotated%20Sorted%20Array%20II.rb)
     * [101. Symmetric Tree](https://github.com/agarun/algorithms/blob/master/leetcode/Leetcode%20101.%20Symmetric%20Tree.rb)
