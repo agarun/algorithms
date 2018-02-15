@@ -1,5 +1,3 @@
-Common puzzles, problems, and algorithms.
-
 ### Graph traversal
   * Depth-first search
     * [Ruby](https://github.com/agarun/algorithms/blob/master/depth-first-search/depth-first-search.rb)
@@ -33,7 +31,7 @@ Common puzzles, problems, and algorithms.
     * [Ruby](https://github.com/agarun/algorithms/blob/master/binary-search/binary-search.rb)
     * [JavaScript](https://github.com/agarun/algorithms/blob/master/binary-search/binary-search.js)
 
-### Challenges (mostly Ruby & JavaScript)
+### Challenges (Ruby, JavaScript)
   * Project Euler
     * [1. Multiples of 3 and 5](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%201.%20Multiples%20of%203%20and%205.rb)
     * [2. Even Fibonacci numbers](https://github.com/agarun/algorithms/blob/master/project-euler/Euler%202.%20Even%20Fibonacci%20numbers.rb)
